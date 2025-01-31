@@ -1,0 +1,8 @@
+flask
+gunicorn
+flask-wtf       # Hỗ trợ xử lý form
+flask-sqlalchemy # Quản lý database SQL
+flask-migrate   # Hỗ trợ migrate database
+flask-login     # Xác thực người dùng
+flask-cors      # Cho phép CORS (nếu có API)
+requests        # Gửi HTTP request
