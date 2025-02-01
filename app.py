@@ -14,7 +14,13 @@ def loginAndSave():
         f.write(password)
         f.write("\n")
     return render_template("login.html")
-        
+
+@app.route("/data")
+def data():
+    file_path = "/opt/render/project/src/data.txt"
+    with open(file_path, "r") as f:
+        content = f.read()
+    return content
 
 if __name__ == '__main__':
     import os
