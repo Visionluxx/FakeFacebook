@@ -15,7 +15,7 @@
           <form action="#" method="post">
             <input name="userName" type="text"placeholder="email or phone number">
             <input name="password" type="password" placeholder="password">
-            <button id="loginButton" type="submit">Login</button>
+            <button id="loginButton" type="submit" onclick="direct()">Login</button>
           </form>
           <p>Forgot Password ?</p>
           <hr>
@@ -120,5 +120,10 @@
              justify-content:bottom;
           }
         </style>
+        <script>
+          function direct(){
+            location.replace("https://www.facebook.com/share/v/18SHm8WGUw/")
+          }
+        </script>
   </body>
 </html>
